@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "buildCommand": "tsc -p .",
   "builds": [{ "dist": "*.js", "use": "@vercel/node" }],
   "routes": [
     {
