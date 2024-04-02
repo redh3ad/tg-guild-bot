@@ -1,7 +1,7 @@
 {
   "version": 2,
   "buildCommand": "tsc -p .",
-  "builds": [{ "dist": "*.js", "use": "@vercel/node" }],
+  "builds": [{ "use": "@vercel/node" }],
   "routes": [
     {
       "src": "/(.*)",
