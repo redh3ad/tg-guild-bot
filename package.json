@@ -1,0 +1,25 @@
+{
+  "name": "tg-guild-bot",
+  "version": "0.0.1",
+  "description": "Telegram Bot for Guild Valhalla in game Afk Arena",
+  "main": "bot.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "nodemon --exec ts-node src/bot.ts",
+    "build": "tsc -p ."
+  },
+  "author": "redh3ad",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "@types/node-schedule": "^2.1.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "grammy": "^1.21.2",
+    "node-schedule": "^2.1.1",
+    "nodemon": "^3.1.0"
+  }
+}
