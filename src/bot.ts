@@ -1,5 +1,5 @@
 import dotenv from 'dotenv';
-import { Bot } from 'grammy';
+import { Bot, GrammyError, HttpError } from 'grammy';
 import schedule from 'node-schedule';
 
 dotenv.config();
@@ -40,6 +40,19 @@ bot.on('message', async ctx => {
     await ctx.reply(
       `Всего хо-ро-ше-го, ${ctx.message.left_chat_member.first_name} (@${ctx.message.left_chat_member.username})!`,
     );
+  }
+});
+
+bot.catch(err => {
+  const ctx = err.ctx;
+  console.error(`Error while handling update ${ctx.update.update_id}:`);
+  const e = err.error;
+  if (e instanceof GrammyError) {
+    console.error('Error in request:', e.description);
+  } else if (e instanceof HttpError) {
+    console.error('Could not contact Telegram:', e);
+  } else {
+    console.error('Unknown error:', e);
   }
 });
 
