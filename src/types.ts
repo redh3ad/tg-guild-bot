@@ -1,4 +1,10 @@
 import { HydrateFlavor } from '@grammyjs/hydrate';
 import { Context } from 'grammy';
 
-export type botContextType = HydrateFlavor<Context>;
+export interface BotConfig {
+  botDeveloper: number;
+  isDeveloper: boolean;
+}
+export type botContextType = HydrateFlavor<Context> & {
+  config: BotConfig;
+};

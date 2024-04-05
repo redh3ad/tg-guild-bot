@@ -5,7 +5,12 @@ import { botContextType } from './types';
 import chatMembersEvents from './utils/chatMembersEvents';
 import errorHandler from './utils/errorHandler';
 import greetingsWithBot from './utils/greetingsWithBot';
-import { backCommand, guidesCommand, menuCommand } from './utils/menuCommand';
+import {
+  backCommand,
+  guidesCommand,
+  menuCommand,
+  navigationCommand,
+} from './utils/menuCommand';
 import startCommand from './utils/startCommand';
 
 dotenv.config();
@@ -25,6 +30,7 @@ bot.command('start', ctx => startCommand(ctx, bot));
 bot.command('menu', ctx => menuCommand(ctx, bot));
 bot.callbackQuery('back', ctx => backCommand(ctx));
 bot.callbackQuery('guides', ctx => guidesCommand(ctx));
+bot.callbackQuery('navigation', ctx => navigationCommand(ctx));
 // greetings with bot
 bot.hears('привет бот', ctx => greetingsWithBot(ctx));
 // chat members events
