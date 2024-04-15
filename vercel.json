@@ -1,4 +1,5 @@
 {
+  "builds": [{ "use": "@vercel/node" }],
   "functions": {
     "api/index.ts": {
       "memory": 1024,
