@@ -4,7 +4,7 @@
   "builds": [{ "use": "@vercel/node" }],
 
   "functions": {
-    "api/bot.ts": {
+    "api/index.ts": {
       "memory": 1024,
       "maxDuration": 10
     }
