@@ -14,3 +14,10 @@ v0.0.1(beta):
 
 
 -- Переписать команды через Compose
+
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "api/index.ts"
+    }
+  ]

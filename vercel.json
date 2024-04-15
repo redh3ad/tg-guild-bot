@@ -2,10 +2,11 @@
   "version": 2,
   "buildCommand": "tsc -p .",
   "builds": [{ "use": "@vercel/node" }],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "api/index.ts"
+
+  "functions": {
+    "api/bot.ts": {
+      "memory": 1024,
+      "maxDuration": 10
     }
-  ]
+  }
 }
