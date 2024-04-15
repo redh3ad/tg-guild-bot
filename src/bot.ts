@@ -39,3 +39,5 @@ bot.on('message', ctx => chatMembersEvents(ctx));
 bot.catch(err => errorHandler(err));
 // start bot
 bot.start();
+
+export default bot;

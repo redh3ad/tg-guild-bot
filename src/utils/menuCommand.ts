@@ -6,7 +6,7 @@ const menuKeyboard = new InlineKeyboard()
   .row()
   .text('Навигация', 'navigation')
   .row()
-  .url('Казик🎰', 'https://t.me/c/1543899602/330969');
+  .url('Симулятор астрозала🎰', 'https://t.me/c/1543899602/330969');
 
 const guidesKeyboard = new InlineKeyboard()
   .url('Бот активации кодов возмещения', 'https://t.me/AFKArenaHelper_bot')
