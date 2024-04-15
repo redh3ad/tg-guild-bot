@@ -15,9 +15,14 @@ v0.0.1(beta):
 
 -- Переписать команды через Compose
 
+{
+  "version": 2,
+  "buildCommand": "tsc -p .",
+  "builds": [{ "use": "@vercel/node" }],
   "routes": [
     {
       "src": "/(.*)",
       "dest": "api/index.ts"
     }
   ]
+}
