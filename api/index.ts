@@ -1,4 +1,4 @@
-require('../src/index');
+require('../src/bot');
 
 import { webhookCallback } from 'grammy';
 import bot from '../src/bot';
