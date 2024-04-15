@@ -1,4 +1,6 @@
 {
+  "version": 2,
+  "buildCommand": "tsc -p .",
   "builds": [{ "use": "@vercel/node" }],
   "functions": {
     "api/index.ts": {
