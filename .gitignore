@@ -4,4 +4,4 @@
 
 # production
 /dist
-# /build
+/build
