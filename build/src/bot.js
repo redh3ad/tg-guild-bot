@@ -35,5 +35,5 @@ bot.on('message', ctx => (0, chatMembersEvents_1.default)(ctx));
 // error handler
 bot.catch(err => (0, errorHandler_1.default)(err));
 // // start bot
-bot.start();
+// bot.start();
 exports.default = bot;
