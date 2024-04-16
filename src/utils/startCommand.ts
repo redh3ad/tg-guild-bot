@@ -5,7 +5,7 @@ import { botContextType } from '../types';
 const startCommand = async (ctx: Context, bot: Bot<botContextType>) => {
   await ctx.reply('Бот гильдии "Вальхалла" приветствует тебя!');
   schedule.scheduleJob(
-    { hour: 14, minute: 10, dayOfWeek: 2 },
+    { hour: 12, minute: 0, dayOfWeek: 1 },
     async function () {
       if (ctx.chat) {
         await bot.api.sendMessage(
