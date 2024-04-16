@@ -5,6 +5,7 @@
   "main": "bot.js",
   "type": "commonjs",
   "scripts": {
+    "start": "node build/src/bot.js",
     "dev": "nodemon --exec ts-node src/bot.ts",
     "build": "tsc -p ."
   },
